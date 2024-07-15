@@ -1,6 +1,7 @@
 import jax
 import jax.numpy as jnp
 from flax import struct
+from functools import partial
 from gymnax.wrappers.purerl import (
     GymnaxWrapper,
     Optional,
@@ -8,7 +9,6 @@ from gymnax.wrappers.purerl import (
     Union,
     chex,
     environment,
-    partial,
     spaces,
 )
 
